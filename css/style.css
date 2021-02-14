@@ -1,0 +1,22 @@
+.title {
+    color:#d81c1c;
+    background:coral;
+    font-family: 'Varela Round', sans-serif;
+    font-weight: bold;
+    padding:10px;
+    text-align:center;
+}
+
+.title .monkey {
+    color:white;
+}
+
+h3{
+    font-family: Arial;
+}
+
+body{
+    background-color:white;
+    font-family: 'proxima-nova';
+}
+
