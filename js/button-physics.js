@@ -28,11 +28,15 @@ const onFunkyBtnHover = (btn) => {
     const acc = 0.6;
     var vel = 0.1;
 
+    const startTimer = 5;
+    var time = 0;
+
     id = setInterval(frame, 10);
     function frame() {
+        time++;
         if ((Math.abs(finalY - y) < vel) && (Math.abs(finalX - x) < vel)) {
             clearInterval(id);
-        } else {
+        } else if (time >= startTimer) {
             vel += acc;
             x += vel * xDir;
             y += vel * yDir;
