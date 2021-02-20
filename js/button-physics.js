@@ -7,30 +7,33 @@ function getRndInteger(min, max) {
 
 const onFunkyBtnHover = (btn) => {
     clearInterval(id);
-    var rect = btn.getBoundingClientRect();
+    
+    const rect = btn.getBoundingClientRect();
     var x = rect.left;
     var y = rect.top;
-    var vel = 0;
 
     const w = 1000;
     const h = 600;
 
-    var finalX = getRndInteger(0, w);
-    var finalY = getRndInteger(0, h);
+    const finalX = getRndInteger(0, w);
+    const finalY = getRndInteger(0, h);
 
-    var dx = finalX - x;
-    var dy = finalY - y;
-    var dist = Math.hypot(dx, dy);
+    const dx = finalX - x;
+    const dy = finalY - y;
+    const dist = Math.hypot(dx, dy);
 
-    var xDir = dx / dist;
-    var yDir = dy / dist;
+    const xDir = dx / dist;
+    const yDir = dy / dist;
+
+    const acc = 0.4
+    var vel = 0;
 
     id = setInterval(frame, 10);
     function frame() {
         if ((Math.abs(finalY - y) < vel) && (Math.abs(finalX - x) < vel)) {
             clearInterval(id);
         } else {
-            vel += 0.2;
+            vel += acc;
             x += vel * xDir;
             y += vel * yDir;
 
