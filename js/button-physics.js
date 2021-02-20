@@ -25,8 +25,8 @@ const onFunkyBtnHover = (btn) => {
     const xDir = dx / dist;
     const yDir = dy / dist;
 
-    const acc = 0.6;
-    var vel = 0.1;
+    const acc = 0.9;
+    var vel = 0.2;
 
     const startTimer = 5;
     var time = 0;
