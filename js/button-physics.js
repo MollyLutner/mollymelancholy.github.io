@@ -25,7 +25,7 @@ const onFunkyBtnHover = (btn) => {
     const xDir = dx / dist;
     const yDir = dy / dist;
 
-    const acc = 0.6
+    const acc = 0.6;
     var vel = 0.1;
 
     id = setInterval(frame, 10);
