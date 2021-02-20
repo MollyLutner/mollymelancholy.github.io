@@ -11,11 +11,15 @@
     color:white;
 }
 
-h3{
+.tagline {
+    text-align: center;
+}
+
+h3 {
     font-family: Arial;
 }
 
-body{
+body {
     background-color:white;
     font-family: 'proxima-nova';
 }
