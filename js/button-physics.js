@@ -5,7 +5,8 @@ function getRndInteger(min, max) {
     return Math.floor(Math.random() * (max - min + 1) ) + min;
   }
 
-const onFunkyBtnClick = (btn) => {
+const onFunkyBtnHover = (btn) => {
+    clearInterval(id);
     var rect = btn.getBoundingClientRect();
     var x = rect.left;
     var y = rect.top;
@@ -32,11 +33,6 @@ const onFunkyBtnClick = (btn) => {
             vel += 0.2;
             x += vel * xDir;
             y += vel * yDir;
-
-            x = x > w ? w : x;
-            y = y > h ? h : y;
-            x = x < 0 ? 0 : x;
-            y = y < 0 ? 0 : y;
 
             btn.style.top = y + 'px';
             btn.style.left = x + 'px';
