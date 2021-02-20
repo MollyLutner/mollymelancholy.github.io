@@ -11,34 +11,37 @@ const onFunkyBtnClick = (btn) => {
     var y = rect.top;
     var vel = 0;
 
-    const displacement = 200
-    const finalX = x + displacement
-    const finalY = y + displacement
-
-    const yDir = getRndInteger(0, 2) - 1;
-    const xDir = getRndInteger(0, 2) - 1;
-
     const w = 1000;
     const h = 600;
 
+    var finalX = getRndInteger(0, w);
+    var finalY = getRndInteger(0, h);
+
+    var dx = finalX - x;
+    var dy = finalY - y;
+    var dist = Math.hypot(dx, dy);
+
+    var xDir = dx / dist;
+    var yDir = dy / dist;
+
     id = setInterval(frame, 10);
     function frame() {
-        if (y > finalY || x > finalX || x > w || x < 0 || y > h || y < 0) {
+        if ((Math.abs(finalY - y) < vel) && (Math.abs(finalX - x) < vel)) {
             clearInterval(id);
         } else {
-            vel++;
+            vel += 0.2;
             x += vel * xDir;
             y += vel * yDir;
 
-            // x = x > w ? w : x;
-            // y = y > h ? h : y;
-            // x = x < 0 ? 1 : x;
-            // y = y < 0 ? 1 : y;
+            x = x > w ? w : x;
+            y = y > h ? h : y;
+            x = x < 0 ? 0 : x;
+            y = y < 0 ? 0 : y;
 
             btn.style.top = y + 'px';
             btn.style.left = x + 'px';
         }
-        console.log(btn.style.left);
+        
     }
     
 
