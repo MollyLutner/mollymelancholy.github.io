@@ -9,7 +9,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>
-        MonkeyJobs.com
+        Assessment - MonkeyJobs.com
     </title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="css/style.css">
@@ -21,8 +21,37 @@
   <h1 class="title"><img src="img/SVG/Monkey Jobs Logo 1.svg" alt="MonkeyJobsLogo" width="150px"
     height="100px"><span class="monkey">Monkey</span>Jobs</h1>
     <!--Questions-->
-    
-    <button onmouseover="onFunkyBtnHover(this)" onclick="alert('You got me!')" class="funky-btn">Press Me</button>
+
+        <header>
+            <div class="pull-left">Question 1</div>
+        </header>
+        <main>
+          <form class="questionForm" id="ql" data-question="1">
+            <h3> Type Question Here </h3>
+            <ul>
+              <li><input name="q1" type="radio" value="a" />a</li>
+              <li><input name="q1" type="radio" value="b" />b</li>
+              <li><input name="q1" type="radio" value="c" />c</li>
+              <li><input name="q1" type="radio" value="d" />d</li>
+            </ul>
+            <button id="submit">Submit</button>
+          </form>
+        </main>
+
+        <main>
+          <form class="questionForm" id="ql" data-question="1">
+            <h3> Type Question Here </h3>
+            <ul>
+              <li><input name="q1" type="radio" value="a" />a</li> 
+              <li><input name="q1" type="radio" value="b" />b</li>
+              <li><input name="q1" type="radio" value="c" />c</li>
+              <li><input name="q1" type="radio" value="d" />d</li>
+            </ul>
+            <button onmouseover="onFunkyBtnHover(this)" onclick="alert('You got me!')" class="funky-btn">Submit</button>
+          </form>
+        </main>
+
+
     <div style="padding:18px"></div>
     <div>
         <input type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
@@ -36,5 +65,7 @@
           Second default radio
         </label>
       </div>
+      <button onmouseover="onFunkyBtnHover(this)" onclick="alert('You got me!')" class="funky-btn">Press Me</button>
+      <div class="container"></div>
 </body>
 </html>
