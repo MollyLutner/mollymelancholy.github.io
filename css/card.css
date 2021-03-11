@@ -9,34 +9,33 @@
     padding: 2px 16px;
 }
 
+.card-text {
+    overflow: hidden;
+    max-width: 75ch;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.job-card {
+    margin-bottom: 12px;
+}
+
 /* On mouse-over, add a deeper shadow */
 .card:hover {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 } 
 
-.job-card {
-    width: 600px;
-    margin: 12px;
-    
-}
-
-p {
-  overflow: hidden;
-  max-width: 75ch;
-  text-overflow: ellipsis;
-  white-space: nowrap;
+.job-info-wrapper {
+    max-width: 500px;
 }
 
 .job-list-wrapper {
-    display: inline-flex;
-    flex-wrap: wrap;
-    gap: 12px;
-    
+    max-width: 500px;
 }
 
 
 .job-details {
-    width: 400px;
+    width: 100%;
     margin: 12px;
 }
 
