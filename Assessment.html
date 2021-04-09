@@ -28,72 +28,70 @@
   </h1>
 
   <!--First Set of Questions-->
-  <div class="questions">
+  <div id="questions">
     <div id="1">
-        <header>
-          <div class="pull-left">Question 1</div>
-        </header>
-        <main>
-          <form class="questionForm" id="ql" data-question="1">
-            <h3> Type Question Here </h3>
-            <ul>
-              <li><input name="q1" type="radio" value="a" />a</li>
-              <li><input name="q1" type="radio" value="b" />b</li>
-              <li><input name="q1" type="radio" value="c" />c</li>
-              <li><input name="q1" type="radio" value="d" />d</li>
-            </ul>
-            <button id="submit">Submit</button>
-          </form>
-        </main>
-      </div>
+      <header>
+        <div class="pull-left">Question 1</div>
+      </header>
+      <main>
+        <form class="questionForm" id="ql" data-question="1">
+          <h3> Type Question Here </h3>
+          <ul>
+            <li><input name="q1" type="radio" value="a" />a</li>
+            <li><input name="q1" type="radio" value="b" />b</li>
+            <li><input name="q1" type="radio" value="c" />c</li>
+            <li><input name="q1" type="radio" value="d" />d</li>
+          </ul>
+        </form>
+      </main>
+    </div>
 
 
-      <div id="2" hidden>
-        <header>
-          <div class="pull-left">Question 2</div>
-        </header>
-        <main>
-          <form class="questionForm" id="ql" data-question="2">
-            <h3> Type Question Here </h3>
-            <ul>
-              <li><input name="q1" type="radio" value="a" />a</li>
-              <li><input name="q1" type="radio" value="b" />b</li>
-              <li><input name="q1" type="radio" value="c" />c</li>
-              <li><input name="q1" type="radio" value="d" />d</li>
-            </ul>
-            <button id="submit">Submit</button>
-          </form>
-        </main>
-      </div>
+    <div id="2" hidden>
+      <header>
+        <div class="pull-left">Question 2</div>
+      </header>
+      <main>
+        <form class="questionForm" id="ql" data-question="2">
+          <h3> Type Question Here </h3>
+          <ul>
+            <li><input name="q1" type="radio" value="a" />a</li>
+            <li><input name="q1" type="radio" value="b" />b</li>
+            <li><input name="q1" type="radio" value="c" />c</li>
+            <li><input name="q1" type="radio" value="d" />d</li>
+          </ul>
+        </form>
+      </main>
+    </div>
 
 
-      <div id="3" hidden>
-        <header>
-          <div class="pull-left">Question 3</div>
-        </header>
-        <main>
-          <form class="questionForm" id="ql" data-question="3">
-            <h3> Type Question Here </h3>
-            <ul>
-              <li><input name="q1" type="radio" value="a" />a</li>
-              <li><input name="q1" type="radio" value="b" />b</li>
-              <li><input name="q1" type="radio" value="c" />c</li>
-              <li><input name="q1" type="radio" value="d" />d</li>
-            </ul>
-            <button onmouseover="onFunkyBtnHover(this)" onclick="alert('You got me!')" class="funky-btn">Submit</button>
-          </form>
-      </div>
+    <div id="3" hidden>
+      <header>
+        <div class="pull-left">Question 3</div>
+      </header>
+      <main>
+        <form class="questionForm" id="ql" data-question="3">
+          <h3> Type Question Here </h3>
+          <ul>
+            <li><input name="q1" type="radio" value="a" />a</li>
+            <li><input name="q1" type="radio" value="b" />b</li>
+            <li><input name="q1" type="radio" value="c" />c</li>
+            <li><input name="q1" type="radio" value="d" />d</li>
+          </ul>
+        </form>
+    </div>
   </div>
-  <div>
-    <button onclick="onNextClick(3)">Next</button>
+
+  <button id="prev-btn" onclick="onPrevClick()" disabled>Back</button>
+  <button id="nxt-btn" onclick="onNextClick(3)">Next</button>
+
+  <div id="submit" hidden>
+    <button onmouseover="onFunkyBtnHover(this)" onclick="alert('You got me!')" class="funky-btn">Submit</button>
   </div>
 
   <div id="results"></div>
   <br>
   </main>
-  <div>
-    <script src="js/quiz.js"></script>
-  </div>
 
   <div style="padding:18px"></div>
   <div>
