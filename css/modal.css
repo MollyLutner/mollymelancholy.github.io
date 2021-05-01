@@ -3,6 +3,7 @@
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
   z-index: 1; /* Sit on top */
+  text-align: center;
   left: 0;
   top: 0;
   width: 100%; /* Full width */
@@ -22,7 +23,9 @@
 }
 
 .modal-btn {
-  width: 40%;
+  padding-left: 10px;
+  padding-right: 10px;
+  width: max-content;
   text-align: center;
   display: block;
   margin-left: auto;

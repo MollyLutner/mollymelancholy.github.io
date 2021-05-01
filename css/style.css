@@ -21,10 +21,51 @@ h3 {
 
 body {
     background-color:white;
-    font-family: 'proxima-nova';
+    font-family: 'Varela Round', sans-serif;
 }
 
 footer {
     background:coral;
     
 }
+
+.centre {
+    display: table;
+    margin: 0 auto;
+}
+
+.timer {
+    font-family: 'Courier New';
+    font-weight: bold;
+    margin: -8px auto 0px auto;
+    font-size: 2em;
+    background-color: #ff4141;
+    text-align: center;
+    border: 1px solid rgb(255, 44, 44);
+    color: white;
+    border-radius: 0px 0px 15px 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: max-content;
+ /* Could be more or less, depending on screen size */
+}
+
+.questions {
+    padding-top: 32px;
+    padding-left: 20%;
+    padding-right: 20%;
+    margin: auto;
+}
+
+.questions h3 {
+    text-align: center;
+}
+
+.next-btn {
+    width: 80px;
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+  }

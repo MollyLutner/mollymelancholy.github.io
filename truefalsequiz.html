@@ -20,6 +20,7 @@
     <link rel="stylesheet" type="text/css" href="css/assessment.css">
     <link rel="stylesheet" type="text/css" href="css/funky-btn.css">
     <link rel="stylesheet" type="text/css" href="css/modal.css">
+    <link rel="stylesheet" type="text/css" href="css/radio.css">
 
     <script type="text/javascript" src="js/button-physics.js"></script>
     <script type="text/javascript" src="js/timer.js"></script>
@@ -42,37 +43,39 @@
             </div>
     </div>
 
-    Time Remaining: <span id="timer">10:00</span>
+    <div class="timer">
+        <span id="timer">10:00</span>
+    </div>
+
+
+
 
     <!--First Set of Questions-->
-    <div id="questions">
+    <div class="questions" id="questions" class="centre">
         <div id="1">
-            <header>
-                <div class="pull-left">Question 1</div>
-            </header>
             <h3>
-            We should greet all our customers
+            1. We should greet all our customers
             </h3>
 
-            <form id="q1f">
-                <input type="radio" id="true1" name="q" value="true">
-                <label for="true1">True</label><br>
-                <input type="radio" id="false1" name="q" value="false">
-                <label for="false1">False</label><br>
-
-                
+            <form id="q1f" class="centre">          
+                <label class="container" for="true1">True
+                    <input type="radio" id="true1" name="q" value="true">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="container" for="false1">False
+                    <input type="radio" id="false1" name="q" value="false">
+                    <span class="checkmark"></span>
+                </label>  
             </form>
-            <button onclick="onQuestionSubmit(
+            <button class="next-btn" onclick="onQuestionSubmit(
                 'q1f', 'false',
                 'We welcome our customers, not greet them',
                 'We welcome our customers, not greet them'
             )">Next</button>
+
         </div>
 
         <div id="2" hidden>
-            <header>
-                <div class="pull-left">Question 2</div>
-            </header>
             <h3>
                 2. You're serving customers at the till and the store is busier than usual.
                 Your manager calls and asks to speak with you but there is a long queue of customers waiting to be
@@ -80,19 +83,23 @@
                 What do you do?
             </h3>
 
-            <form id="q2f">
-                <input type="radio" id="true2" name="q" value="true">
-                <label for="true2">True</label><br>
-                <input type="radio" id="false2" name="q" value="false">
-                <label for="false2">False</label><br>
-
-                
+            <form id="q2f" class="centre">
+                <label class="container" for="true2">True
+                    <input type="radio" id="true2" name="q" value="true">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="container" for="false2">False
+                    <input type="radio" id="false2" name="q" value="false">
+                    <span class="checkmark"></span>
+                </label>  
             </form>
-            <button onclick="onQuestionSubmit(
-                'q2f', 'false2',
-                'Correct, we welcome our customers, not greet them',
-                'You did not select the correct resposne. We welcome our customers, not greet them'
-            )">Next</button>
+            <div class="centre">
+                <button onclick="onQuestionSubmit(
+                    'q2f', 'false',
+                    'Correct, we welcome our customers, not greet them',
+                    'You did not select the correct resposne. We welcome our customers, not greet them'
+                )">Next</button>
+            </div>
         </div>
     </div>
 

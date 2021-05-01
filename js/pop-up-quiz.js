@@ -27,6 +27,8 @@ const onQuestionSubmit = (qId, ans, correctMsg, incorrectMsg) => {
     if (selected == null) {
         okBtn.style.display = "block";
         continueBtn.style.display = "none";
+        modalHead.style.color = "red";
+        modalHead.innerHTML = "Error";
         showModal("Please select an answer!")
     } else {
         if (page >= maxPages) {
@@ -40,10 +42,12 @@ const onQuestionSubmit = (qId, ans, correctMsg, incorrectMsg) => {
         }
 
         if (selected == ans) {
-            modalHead.innerHTML = "Correct";
+            modalHead.innerHTML = "Correct &#10004;";
+            modalHead.style.color = "green";
             showModal(correctMsg);
         } else {
-            modalHead.innerHTML = "Incorrect";
+            modalHead.innerHTML = "Incorrect &#10008;";
+            modalHead.style.color = "red";
             showModal(incorrectMsg);
         }
     }
