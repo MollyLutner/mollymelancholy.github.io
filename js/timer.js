@@ -1,10 +1,11 @@
 var time;
 var resultsPage;
+var interval;
 
 const startTimer = (duration, nextPage) => {
     time = duration;
     resultsPage = nextPage;
-    setInterval(timer, 1000);
+    interval = setInterval(timer, 1000);
 }
 
 const formatTime = (time) => {
@@ -26,10 +27,9 @@ const timer = () => {
         formattedTime = formatTime(time);
         document.getElementById("timer").innerHTML = formattedTime;
     } else {
-       // PUT CODE TO CHANGE PAGE HERE.
-       window.open(resultsPage, '_self', false);
+        clearInterval(interval);
+        alert("Times up!");
+        window.open(resultsPage, '_self', false);
     }
-    
-
 
 }
