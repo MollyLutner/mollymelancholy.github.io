@@ -33,11 +33,13 @@
 
     <div id="myModal" class="modal">
         <div class="modal-content">
-        <p id="modal-text"></p>
-        <button class="modal-btn" id="modal-continue" onclick="onNextClick()">Continue</button>
-        <button class="modal-btn" id="modal-ok" onclick="hideModal()">Ok</button>
-        <button class="modal-btn" style="display: none" id="modal-submit" onclick="submit()">Submit</button>
-        </div>
+            <span class="modal-head"></span>
+            <p id="modal-text"></p>
+            
+            <button class="modal-btn" id="modal-continue" onclick="onNextClick()">Continue</button>
+            <button class="modal-btn" id="modal-ok" onclick="hideModal()">Ok</button>
+            <button class="modal-btn" style="display: none" id="modal-submit" onclick="submit()">Submit</button>
+            </div>
     </div>
 
     Time Remaining: <span id="timer">10:00</span>
@@ -62,8 +64,8 @@
             </form>
             <button onclick="onQuestionSubmit(
                 'q1f', 'false',
-                'Correct, we welcome our customers, not greet them',
-                'You did not select the correct resposne. We welcome our customers, not greet them'
+                'We welcome our customers, not greet them',
+                'We welcome our customers, not greet them'
             )">Next</button>
         </div>
 
@@ -87,7 +89,7 @@
                 
             </form>
             <button onclick="onQuestionSubmit(
-                'q1f', 'false',
+                'q2f', 'false2',
                 'Correct, we welcome our customers, not greet them',
                 'You did not select the correct resposne. We welcome our customers, not greet them'
             )">Next</button>

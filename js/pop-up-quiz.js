@@ -22,6 +22,8 @@ const onQuestionSubmit = (qId, ans, correctMsg, incorrectMsg) => {
     const okBtn = document.getElementById("modal-ok");
     const continueBtn = document.getElementById("modal-continue");
 
+    const modalHead = document.getElementsByClassName("modal-head")[0];
+    console.log(selected)
     if (selected == null) {
         okBtn.style.display = "block";
         continueBtn.style.display = "none";
@@ -38,8 +40,10 @@ const onQuestionSubmit = (qId, ans, correctMsg, incorrectMsg) => {
         }
 
         if (selected == ans) {
+            modalHead.innerHTML = "Correct";
             showModal(correctMsg);
         } else {
+            modalHead.innerHTML = "Incorrect";
             showModal(incorrectMsg);
         }
     }
