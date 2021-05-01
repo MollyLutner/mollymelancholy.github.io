@@ -11,11 +11,11 @@ const formatTime = (time) => {
     minutes = Math.floor(time / 60);
     seconds = time % 60;
 
-    if (minutes > 0) {
-        return minutes + ":" + seconds;
-    } else {
-        return seconds
-    }
+    seconds = (seconds < 10 ? "0" : "") + seconds;
+    minutes = (minutes < 10 ? "0" : "") + minutes;
+
+    return minutes + ":" + seconds;
+
 
     
 }
