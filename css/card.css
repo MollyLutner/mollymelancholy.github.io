@@ -2,18 +2,24 @@
   /* Add shadows to create the "card" effect */
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   transition: 0.3s;
+  border-radius: 15px;
 }
 
 /* Add some padding inside the card container */
 .container {
-    padding: 2px 16px;
+    padding: 16px 16px;
+}
+
+h3 {
+    font-size: 20px;
 }
 
 .card-text {
     overflow: hidden;
-    max-width: 75ch;
     text-overflow: ellipsis;
-    white-space: nowrap;
+    display: -webkit-box;
+    -webkit-line-clamp: 4; /* number of lines to show */
+    -webkit-box-orient: vertical;
 }
 
 .job-card {
@@ -22,6 +28,7 @@
 
 /* On mouse-over, add a deeper shadow */
 .card:hover {
+    cursor: pointer;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 } 
 

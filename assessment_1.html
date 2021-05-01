@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+  <link rel="shortcut icon" type="image/svg" href="img/SVG/Asset 6.svg">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>
+    Assessment - MonkeyJobs.com
+  </title>
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/Quiz.css">
+
+  <link rel="stylesheet" type="text/css" href="css/funky-btn.css">
+  <script type="text/javascript" src="js/button-physics.js"></script>
+  <script type="text/javascript" src="js/assessment.js"></script>
+  <script type="text/javascript" src="js/timer.js"></script>
+
+  <link rel="stylesheet" type="text/css" href="css/assessment.css">
+
+</head>
+
+<body onload="startTimer(600, 'resultspage1.html')">
+  <h1 class="title"><img src="img/SVG/Asset 16.svg" alt="MonkeyJobsLogo" width="75px" height="75px"><span
+      class="monkey">Monkey</span>Jobs
+  </h1>
+
+  Time Remaining: <span id="timer">10:00</span>
+
+  <!--First Set of Questions-->
+  <div id="questions">
+    <div id="1">
+      <header>
+        <div class="pull-left">Question 1</div>
+      </header>
+        <form class="questionForm" id="ql" data-question="1">
+          <h3>1. You're serving customers at the till and the store is busier than usual.
+            Your manager calls and asks to speak with you but there is a long queue of customers waiting to be served.
+            What do you do? </h3>
+          <ul style="list-style-type:none;">
+            <li><input name="q1" type="radio" value="a" />Apologise to your manager and say you can’t talk right now as
+              you're busy serving customers</li>
+            <li><input name="q1" type="radio" value="b" />Stop serving the customers and see what your manager wants
+            </li>
+            <li><input name="q1" type="radio" value="c" />Tell your manager you will talk to him later as it is very
+              busy at the moment</li>
+            <li><input name="q1" type="radio" value="d" />Let your manager know of the situation and let him decide</li>
+          </ul>
+        </form>
+    </div>
+
+    <div id="2" hidden>
+      <header>
+        <div class="pull-left">Question 2</div>
+      </header>
+        <form class="questionForm" id="ql" data-question="2">
+          <h3>2. You are busy stacking shelves and need to get it done as quick as possible.
+            A customer comes up to you and asks if you can show them where the fish counter is. How do you respond?</h3>
+          <ul style="list-style-type:none;">
+            <li><input name="q1" type="radio" value="a" />Apologise, tell them you're too busy and point them to another
+              colleague to ask them for help instead</li>
+            <li><input name="q1" type="radio" value="b" />Tell the customer you will show them after you're done
+              stacking the shelves</li>
+            <li><input name="q1" type="radio" value="c" />Stop what you are doing and point them in the direction of the
+              fish counter</li>
+            <li><input name="q1" type="radio" value="d" />Stop what you are doing and walk the customer to the fish
+              counter</li>
+          </ul>
+        </form>
+    </div>
+
+    <div id="3" hidden>
+      <header>
+        <div class="pull-left">Question 3</div>
+      </header>
+        <form class="questionForm" id="ql" data-question="3">
+          <h3>3. There is a very long queue and a customer is becoming increasingly frustrated waiting. The customer
+            yells at you to hurry up. How do you respond? </h3>
+          <ul style="list-style-type:none;">
+            <li><input name="q1" type="radio" value="a" />Tell the customer that they have to wait a little longer</li>
+            <li><input name="q1" type="radio" value="b" />Apologise to the customer for the wait and say you will be as
+              quick as you can</li>
+            <li><input name="q1" type="radio" value="c" />c</li>
+            <li><input name="q1" type="radio" value="d" />d</li>
+          </ul>
+        </form>
+    </div>
+
+    <div id="4" hidden>
+      <header>
+        <div class="pull-left">Question 4</div>
+      </header>
+        <form class="questionForm" id="ql" data-question="3">
+          <h3>4. Your colleague is running slow and asks you for help but you have to clean the store</h3>
+          <ul style="list-style-type:none;">
+            <li><input name="q1" type="radio" value="a" />Offer to help and clean up store afterwards</li>
+            <li><input name="q1" type="radio" value="b" />Tell them you’re busy trying to clean the store but you will
+              help them</li>
+            <li><input name="q1" type="radio" value="c" />Agree to help and leave the cleaning for another time</li>
+            <li><input name="q1" type="radio" value="d" />Cleaning the store is important but your colleague needs your
+              help. Agree to help them.</li>
+          </ul>
+        </form>
+    </div>
+  </div>
+
+  <button id="prev-btn" onclick="onPrevClick(4)" disabled>Back</button>
+  <button id="nxt-btn" onclick="onNextClick(4)">Next</button>
+
+  <div id="submit" hidden>
+    <button onmouseover="onFunkyBtnHover(this)" onclick="alert('You got me!')" class="funky-btn">Submit</button>
+  </div>
+
+  <div id="results"></div>
+  <b
+
+  <div style="padding:18px"></div>
+  <div>
+
+</body>
+
+</html>
