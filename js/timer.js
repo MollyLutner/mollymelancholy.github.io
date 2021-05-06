@@ -16,9 +16,6 @@ const formatTime = (time) => {
     minutes = (minutes < 10 ? "0" : "") + minutes;
 
     return minutes + ":" + seconds;
-
-
-    
 }
 
 const timer = () => {

@@ -42,12 +42,12 @@ const onQuestionSubmit = (qId, ans, correctMsg, incorrectMsg) => {
         }
 
         if (selected == ans) {
-            modalHead.innerHTML = "Correct &#10004;";
-            modalHead.style.color = "green";
+            modalHead.innerHTML = "Correct";
+            modalHead.style.color = "";
             showModal(correctMsg);
         } else {
-            modalHead.innerHTML = "Incorrect &#10008;";
-            modalHead.style.color = "red";
+            modalHead.innerHTML = "Incorrect";
+            modalHead.style.color = "";
             showModal(incorrectMsg);
         }
     }

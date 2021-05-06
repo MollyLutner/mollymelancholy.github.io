@@ -4,7 +4,7 @@ var sticky = 170;
 var selectedInfo = null;
 
 const onJobClick = (jobId) => {
-    document.querySelectorAll('.job-info').forEach((info) => {
+    document.getElementsByClassName('job-info-wrapper')[0].childNodes.forEach((info) => {
         info.hidden = true;
     });
     

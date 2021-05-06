@@ -69,3 +69,15 @@ footer {
     margin-right: auto;
     border-radius: 10px;
   }
+
+
+
+p {
+    color:#4A4A4A
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }

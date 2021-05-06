@@ -41,9 +41,9 @@ h3 {
 }
 
 
-.job-details {
-    width: 100%;
-    margin: 12px;
+.job-info {
+    overflow: auto;
+    height: 512px;
 }
 
 .content {
