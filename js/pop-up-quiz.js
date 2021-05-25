@@ -1,4 +1,4 @@
-const maxPages = 2;
+const maxPages = 5;
 
 
 const showModal = (msg, next) => {
